@@ -1,0 +1,101 @@
+
+
+
+
+
+
+SELL 0 agedVegetables 680 389;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BUY 1 bathWater 1508 694;
+
+
+
+
+
+
+
+
+
+
+
+
+SELL 2 blueMuffin 1403 81;
+
+
+
+
+
+SELL 3 susCheese 1068 622;
+
+
+BUY 4 bathWater 1160 1479;
+
+
+
+
+
+
+
+
+
+BUY 5 susCheese 694 191;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BUY 6 blueMuffin 53 1587;
+
+
+
+
+BUY 7 metal 403 591;
+BUY 8 susCheese 1636 277;
+
+
+
+SELL 9 blueMuffin 631 472;
+
+SELL 10 blueMuffin 1058 1129;
+
+
+
+
+
+BUY 11 metal 1606 976;
+
+
+BUY 12 susCheese 190 1309;
+
+
+
+

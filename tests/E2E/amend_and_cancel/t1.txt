@@ -1,0 +1,100 @@
+
+SELL 0 one 1753 916;
+SELL 1 two 1721 356;
+
+
+
+
+
+
+
+
+
+
+
+
+BUY 2 three 1994 1109;
+AMEND 0 1783 329;
+
+
+
+
+SELL 3 two 1336 1976;
+CANCEL 1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BUY 4 three 1208 1216;
+
+
+
+SELL 5 one 976 394;
+AMEND 3 961 865;
+
+
+
+
+
+
+BUY 6 three 1356 1318;
+
+
+
+
+
+
+
+
+
+SELL 7 three 1668 381;
+
+AMEND 5 1659 1275;
+BUY 8 three 428 1157;
+
+
+
+
+
+
+
+
+
+BUY 9 one 1265 476;
+
+
+
+
+
+
+SELL 10 two 836 265;
+
+SELL 11 three 63 1307;
+BUY 12 two 573 1660;
+
+
+
+SELL 13 one 1941 572;
+
+
+
+
+
+
+CANCEL 3;
+

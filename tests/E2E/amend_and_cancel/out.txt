@@ -1,0 +1,2476 @@
+[PEX] Starting
+[PEX] Trading 3 products: one two three
+[PEX] Created FIFO /tmp/pe_exchange_0
+[PEX] Created FIFO /tmp/pe_trader_0
+[PEX] Starting trader 0 (./test_writer)
+[PEX] Connected to /tmp/pe_exchange_0
+[PEX] Connected to /tmp/pe_trader_0
+[PEX] Created FIFO /tmp/pe_exchange_1
+[PEX] Created FIFO /tmp/pe_trader_1
+[PEX] Starting trader 1 (./test_writer)
+[PEX] Connected to /tmp/pe_exchange_1
+[PEX] Connected to /tmp/pe_trader_1
+[PEX] Created FIFO /tmp/pe_exchange_2
+[PEX] Created FIFO /tmp/pe_trader_2
+[PEX] Starting trader 2 (./test_writer)
+[PEX] Connected to /tmp/pe_exchange_2
+[PEX] Connected to /tmp/pe_trader_2
+[PEX] Created FIFO /tmp/pe_exchange_3
+[PEX] Created FIFO /tmp/pe_trader_3
+[PEX] Starting trader 3 (./test_writer)
+[PEX] Connected to /tmp/pe_exchange_3
+[PEX] Connected to /tmp/pe_trader_3
+[PEX] Created FIFO /tmp/pe_exchange_4
+[PEX] Created FIFO /tmp/pe_trader_4
+[PEX] Starting trader 4 (./test_writer)
+[PEX] Connected to /tmp/pe_exchange_4
+[PEX] Connected to /tmp/pe_trader_4
+[PEX] Created FIFO /tmp/pe_exchange_5
+[PEX] Created FIFO /tmp/pe_trader_5
+[PEX] Starting trader 5 (./test_reader)
+[PEX] Connected to /tmp/pe_exchange_5
+[PEX] Connected to /tmp/pe_trader_5
+[PEX] [T1] Parsing command: <BUY 0 three 903 405>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 0
+[PEX]	Product: two; Buy levels: 0; Sell levels: 0
+[PEX]	Product: three; Buy levels: 1; Sell levels: 0
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 2: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 4: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T0] Parsing command: <SELL 0 one 1753 916>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 1
+[PEX]		SELL 1753 @ $916 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 0
+[PEX]	Product: three; Buy levels: 1; Sell levels: 0
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 2: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 4: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T0] Parsing command: <SELL 1 two 1721 356>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 1
+[PEX]		SELL 1753 @ $916 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 1
+[PEX]		SELL 1721 @ $356 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 0
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 2: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 4: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T4] Parsing command: <SELL 0 two 256 191>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 1
+[PEX]		SELL 1753 @ $916 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 2
+[PEX]		SELL 1721 @ $356 (1 order)
+[PEX]		SELL 256 @ $191 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 0
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 2: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 4: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <BUY 0 one 830 1236>
+[PEX] Match: Order 0 [T0], New Order 0 [T2], value: $760280, fee: $7603.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 1
+[PEX]		SELL 923 @ $916 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 2
+[PEX]		SELL 1721 @ $356 (1 order)
+[PEX]		SELL 256 @ $191 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 0
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two 0 ($0), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 2: one 830 ($-767883), two 0 ($0), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 4: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <SELL 1 two 1420 1508>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 1
+[PEX]		SELL 923 @ $916 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1721 @ $356 (1 order)
+[PEX]		SELL 256 @ $191 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 0
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two 0 ($0), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 2: one 830 ($-767883), two 0 ($0), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 4: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T3] Parsing command: <BUY 0 three 1882 1611>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 1
+[PEX]		SELL 923 @ $916 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1721 @ $356 (1 order)
+[PEX]		SELL 256 @ $191 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 0
+[PEX]		BUY 1882 @ $1611 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two 0 ($0), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 2: one 830 ($-767883), two 0 ($0), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 4: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T1] Parsing command: <SELL 1 two 282 1748>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 1
+[PEX]		SELL 923 @ $916 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 4
+[PEX]		SELL 282 @ $1748 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1721 @ $356 (1 order)
+[PEX]		SELL 256 @ $191 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 0
+[PEX]		BUY 1882 @ $1611 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two 0 ($0), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 2: one 830 ($-767883), two 0 ($0), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 4: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T3] Parsing command: <BUY 1 two 1723 372>
+[PEX] Match: Order 0 [T4], New Order 1 [T3], value: $48896, fee: $489.
+[PEX] Match: Order 1 [T0], New Order 1 [T3], value: $522252, fee: $5223.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 1
+[PEX]		SELL 923 @ $916 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 282 @ $1748 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 254 @ $356 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 0
+[PEX]		BUY 1882 @ $1611 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1467 ($522252), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 2: one 830 ($-767883), two 0 ($0), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 1723 ($-576860), three 0 ($0)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T3] Parsing command: <SELL 2 two 1298 1241>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 1
+[PEX]		SELL 923 @ $916 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 4
+[PEX]		SELL 282 @ $1748 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1298 @ $1241 (1 order)
+[PEX]		SELL 254 @ $356 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 0
+[PEX]		BUY 1882 @ $1611 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1467 ($522252), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 2: one 830 ($-767883), two 0 ($0), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 1723 ($-576860), three 0 ($0)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T3] Parsing command: <AMEND 2 1633 1365>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 1
+[PEX]		SELL 923 @ $916 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 4
+[PEX]		SELL 282 @ $1748 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1633 @ $1365 (1 order)
+[PEX]		SELL 254 @ $356 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 0
+[PEX]		BUY 1882 @ $1611 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1467 ($522252), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 2: one 830 ($-767883), two 0 ($0), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 1723 ($-576860), three 0 ($0)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T4] Parsing command: <SELL 1 three 1145 1999>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 1
+[PEX]		SELL 923 @ $916 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 4
+[PEX]		SELL 282 @ $1748 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1633 @ $1365 (1 order)
+[PEX]		SELL 254 @ $356 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 1
+[PEX]		SELL 1145 @ $1999 (1 order)
+[PEX]		BUY 1882 @ $1611 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1467 ($522252), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 2: one 830 ($-767883), two 0 ($0), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 1723 ($-576860), three 0 ($0)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <BUY 2 two 558 825>
+[PEX] Match: Order 1 [T0], New Order 2 [T2], value: $90424, fee: $904.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 1
+[PEX]		SELL 923 @ $916 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 3
+[PEX]		SELL 282 @ $1748 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1633 @ $1365 (1 order)
+[PEX]		BUY 304 @ $825 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 1
+[PEX]		SELL 1145 @ $1999 (1 order)
+[PEX]		BUY 1882 @ $1611 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 2: one 830 ($-767883), two 254 ($-91328), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 1723 ($-576860), three 0 ($0)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T0] Parsing command: <BUY 2 three 1994 1109>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 1
+[PEX]		SELL 923 @ $916 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 3
+[PEX]		SELL 282 @ $1748 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1633 @ $1365 (1 order)
+[PEX]		BUY 304 @ $825 (1 order)
+[PEX]	Product: three; Buy levels: 3; Sell levels: 1
+[PEX]		SELL 1145 @ $1999 (1 order)
+[PEX]		BUY 1882 @ $1611 (1 order)
+[PEX]		BUY 1994 @ $1109 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 2: one 830 ($-767883), two 254 ($-91328), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 1723 ($-576860), three 0 ($0)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T0] Parsing command: <AMEND 0 1783 329>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 1
+[PEX]		SELL 1783 @ $329 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 3
+[PEX]		SELL 282 @ $1748 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1633 @ $1365 (1 order)
+[PEX]		BUY 304 @ $825 (1 order)
+[PEX]	Product: three; Buy levels: 3; Sell levels: 1
+[PEX]		SELL 1145 @ $1999 (1 order)
+[PEX]		BUY 1882 @ $1611 (1 order)
+[PEX]		BUY 1994 @ $1109 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 2: one 830 ($-767883), two 254 ($-91328), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 1723 ($-576860), three 0 ($0)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T1] Parsing command: <CANCEL 1>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 1
+[PEX]		SELL 1783 @ $329 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 2
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1633 @ $1365 (1 order)
+[PEX]		BUY 304 @ $825 (1 order)
+[PEX]	Product: three; Buy levels: 3; Sell levels: 1
+[PEX]		SELL 1145 @ $1999 (1 order)
+[PEX]		BUY 1882 @ $1611 (1 order)
+[PEX]		BUY 1994 @ $1109 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX]	Trader 2: one 830 ($-767883), two 254 ($-91328), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 1723 ($-576860), three 0 ($0)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T1] Parsing command: <SELL 2 three 1470 471>
+[PEX] Match: Order 0 [T3], New Order 2 [T1], value: $2368170, fee: $23682.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 1
+[PEX]		SELL 1783 @ $329 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 2
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1633 @ $1365 (1 order)
+[PEX]		BUY 304 @ $825 (1 order)
+[PEX]	Product: three; Buy levels: 3; Sell levels: 1
+[PEX]		SELL 1145 @ $1999 (1 order)
+[PEX]		BUY 412 @ $1611 (1 order)
+[PEX]		BUY 1994 @ $1109 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -1470 ($2344488)
+[PEX]	Trader 2: one 830 ($-767883), two 254 ($-91328), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 1723 ($-576860), three 1470 ($-2368170)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <AMEND 2 844 1978>
+[PEX] Match: Order 2 [T3], New Order 2 [T2], value: $1152060, fee: $11521.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 1
+[PEX]		SELL 1783 @ $329 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 2
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]	Product: three; Buy levels: 3; Sell levels: 1
+[PEX]		SELL 1145 @ $1999 (1 order)
+[PEX]		BUY 412 @ $1611 (1 order)
+[PEX]		BUY 1994 @ $1109 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -1470 ($2344488)
+[PEX]	Trader 2: one 830 ($-767883), two 1098 ($-1254909), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 879 ($575200), three 1470 ($-2368170)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T3] Parsing command: <AMEND 0 745 545>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 1
+[PEX]		SELL 1783 @ $329 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 2
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]	Product: three; Buy levels: 3; Sell levels: 1
+[PEX]		SELL 1145 @ $1999 (1 order)
+[PEX]		BUY 1994 @ $1109 (1 order)
+[PEX]		BUY 745 @ $545 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -1470 ($2344488)
+[PEX]	Trader 2: one 830 ($-767883), two 1098 ($-1254909), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 879 ($575200), three 1470 ($-2368170)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T0] Parsing command: <SELL 3 two 1336 1976>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 1
+[PEX]		SELL 1783 @ $329 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]	Product: three; Buy levels: 3; Sell levels: 1
+[PEX]		SELL 1145 @ $1999 (1 order)
+[PEX]		BUY 1994 @ $1109 (1 order)
+[PEX]		BUY 745 @ $545 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -1470 ($2344488)
+[PEX]	Trader 2: one 830 ($-767883), two 1098 ($-1254909), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 879 ($575200), three 1470 ($-2368170)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T0] Parsing command: <CANCEL 1>
+[PEX] [T4] Parsing command: <SELL 2 one 1575 1854>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 2
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1783 @ $329 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]	Product: three; Buy levels: 3; Sell levels: 1
+[PEX]		SELL 1145 @ $1999 (1 order)
+[PEX]		BUY 1994 @ $1109 (1 order)
+[PEX]		BUY 745 @ $545 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 0 ($0)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -1470 ($2344488)
+[PEX]	Trader 2: one 830 ($-767883), two 1098 ($-1254909), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 879 ($575200), three 1470 ($-2368170)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T1] Parsing command: <SELL 3 three 1935 391>
+[PEX] Match: Order 2 [T0], New Order 3 [T1], value: $2145915, fee: $21459.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 2
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1783 @ $329 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]	Product: three; Buy levels: 3; Sell levels: 1
+[PEX]		SELL 1145 @ $1999 (1 order)
+[PEX]		BUY 59 @ $1109 (1 order)
+[PEX]		BUY 745 @ $545 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 1935 ($-2145915)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -3405 ($4468944)
+[PEX]	Trader 2: one 830 ($-767883), two 1098 ($-1254909), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 879 ($575200), three 1470 ($-2368170)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T1] Parsing command: <AMEND 2 1323 289>
+[PEX] [T4] Parsing command: <BUY 3 three 726 772>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 2
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1783 @ $329 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]	Product: three; Buy levels: 4; Sell levels: 1
+[PEX]		SELL 1145 @ $1999 (1 order)
+[PEX]		BUY 59 @ $1109 (1 order)
+[PEX]		BUY 726 @ $772 (1 order)
+[PEX]		BUY 745 @ $545 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 1935 ($-2145915)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -3405 ($4468944)
+[PEX]	Trader 2: one 830 ($-767883), two 1098 ($-1254909), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 879 ($575200), three 1470 ($-2368170)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <SELL 3 one 1014 700>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 1783 @ $329 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]	Product: three; Buy levels: 4; Sell levels: 1
+[PEX]		SELL 1145 @ $1999 (1 order)
+[PEX]		BUY 59 @ $1109 (1 order)
+[PEX]		BUY 726 @ $772 (1 order)
+[PEX]		BUY 745 @ $545 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 1935 ($-2145915)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -3405 ($4468944)
+[PEX]	Trader 2: one 830 ($-767883), two 1098 ($-1254909), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 879 ($575200), three 1470 ($-2368170)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T4] Parsing command: <BUY 4 three 470 300>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 1783 @ $329 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]	Product: three; Buy levels: 5; Sell levels: 1
+[PEX]		SELL 1145 @ $1999 (1 order)
+[PEX]		BUY 59 @ $1109 (1 order)
+[PEX]		BUY 726 @ $772 (1 order)
+[PEX]		BUY 745 @ $545 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 1935 ($-2145915)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -3405 ($4468944)
+[PEX]	Trader 2: one 830 ($-767883), two 1098 ($-1254909), three 0 ($0)
+[PEX]	Trader 3: one 0 ($0), two 879 ($575200), three 1470 ($-2368170)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three 0 ($0)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <SELL 4 three 102 103>
+[PEX] Match: Order 2 [T0], New Order 4 [T2], value: $65431, fee: $654.
+[PEX] Match: Order 3 [T4], New Order 4 [T2], value: $33196, fee: $332.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 1783 @ $329 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]	Product: three; Buy levels: 4; Sell levels: 1
+[PEX]		SELL 1145 @ $1999 (1 order)
+[PEX]		BUY 683 @ $772 (1 order)
+[PEX]		BUY 745 @ $545 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 1994 ($-2211346)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -3405 ($4468944)
+[PEX]	Trader 2: one 830 ($-767883), two 1098 ($-1254909), three -102 ($97641)
+[PEX]	Trader 3: one 0 ($0), two 879 ($575200), three 1470 ($-2368170)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three 43 ($-33196)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T4] Parsing command: <AMEND 1 1471 540>
+[PEX] Match: Order 3 [T4], New Order 1 [T4], value: $527276, fee: $5273.
+[PEX] Match: Order 0 [T3], New Order 1 [T4], value: $406025, fee: $4060.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 1783 @ $329 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 1
+[PEX]		SELL 43 @ $540 (1 order)
+[PEX]		BUY 903 @ $405 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 1994 ($-2211346)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -3405 ($4468944)
+[PEX]	Trader 2: one 830 ($-767883), two 1098 ($-1254909), three -102 ($97641)
+[PEX]	Trader 3: one 0 ($0), two 879 ($575200), three 2215 ($-2774195)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -702 ($363496)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <SELL 5 three 1655 374>
+[PEX] Match: Order 0 [T1], New Order 5 [T2], value: $365715, fee: $3657.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 1783 @ $329 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 2
+[PEX]		SELL 43 @ $540 (1 order)
+[PEX]		SELL 752 @ $374 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 1994 ($-2211346)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1098 ($-1254909), three -1005 ($459699)
+[PEX]	Trader 3: one 0 ($0), two 879 ($575200), three 2215 ($-2774195)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -702 ($363496)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T1] Parsing command: <CANCEL 2>
+[PEX] [T3] Parsing command: <BUY 3 three 703 1095>
+[PEX] Match: Order 5 [T2], New Order 3 [T3], value: $262922, fee: $2629.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 1783 @ $329 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 2
+[PEX]		SELL 43 @ $540 (1 order)
+[PEX]		SELL 49 @ $374 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 1994 ($-2211346)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1098 ($-1254909), three -1708 ($722621)
+[PEX]	Trader 3: one 0 ($0), two 879 ($575200), three 2918 ($-3039746)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -702 ($363496)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T3] Parsing command: <SELL 4 three 1102 701>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 1783 @ $329 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 3
+[PEX]		SELL 1102 @ $701 (1 order)
+[PEX]		SELL 43 @ $540 (1 order)
+[PEX]		SELL 49 @ $374 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 1994 ($-2211346)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1098 ($-1254909), three -1708 ($722621)
+[PEX]	Trader 3: one 0 ($0), two 879 ($575200), three 2918 ($-3039746)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -702 ($363496)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <AMEND 0 1641 1255>
+[PEX] [T3] Parsing command: <SELL 5 one 746 778>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 4
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 1783 @ $329 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 3
+[PEX]		SELL 1102 @ $701 (1 order)
+[PEX]		SELL 43 @ $540 (1 order)
+[PEX]		SELL 49 @ $374 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 1994 ($-2211346)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1098 ($-1254909), three -1708 ($722621)
+[PEX]	Trader 3: one 0 ($0), two 879 ($575200), three 2918 ($-3039746)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -702 ($363496)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T3] Parsing command: <SELL 6 one 1569 924>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 1783 @ $329 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 3
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 3
+[PEX]		SELL 1102 @ $701 (1 order)
+[PEX]		SELL 43 @ $540 (1 order)
+[PEX]		SELL 49 @ $374 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 1994 ($-2211346)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1098 ($-1254909), three -1708 ($722621)
+[PEX]	Trader 3: one 0 ($0), two 879 ($575200), three 2918 ($-3039746)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -702 ($363496)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T3] Parsing command: <SELL 7 two 1954 545>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 0; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 1783 @ $329 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 4
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 3
+[PEX]		SELL 1102 @ $701 (1 order)
+[PEX]		SELL 43 @ $540 (1 order)
+[PEX]		SELL 49 @ $374 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -830 ($760280), two -1721 ($612676), three 1994 ($-2211346)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1098 ($-1254909), three -1708 ($722621)
+[PEX]	Trader 3: one 0 ($0), two 879 ($575200), three 2918 ($-3039746)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -702 ($363496)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T3] Parsing command: <BUY 8 one 1865 577>
+[PEX] Match: Order 0 [T0], New Order 8 [T3], value: $586607, fee: $5866.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 4
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 82 @ $577 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 4
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 3
+[PEX]		SELL 1102 @ $701 (1 order)
+[PEX]		SELL 43 @ $540 (1 order)
+[PEX]		SELL 49 @ $374 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2613 ($1346887), two -1721 ($612676), three 1994 ($-2211346)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1098 ($-1254909), three -1708 ($722621)
+[PEX]	Trader 3: one 1783 ($-592473), two 879 ($575200), three 2918 ($-3039746)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -702 ($363496)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <SELL 6 two 220 293>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 4
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 82 @ $577 (1 order)
+[PEX]	Product: two; Buy levels: 0; Sell levels: 5
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 220 @ $293 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 3
+[PEX]		SELL 1102 @ $701 (1 order)
+[PEX]		SELL 43 @ $540 (1 order)
+[PEX]		SELL 49 @ $374 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2613 ($1346887), two -1721 ($612676), three 1994 ($-2211346)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1098 ($-1254909), three -1708 ($722621)
+[PEX]	Trader 3: one 1783 ($-592473), two 879 ($575200), three 2918 ($-3039746)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -702 ($363496)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <BUY 7 two 1864 283>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 4
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 82 @ $577 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 220 @ $293 (1 order)
+[PEX]		BUY 1864 @ $283 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 3
+[PEX]		SELL 1102 @ $701 (1 order)
+[PEX]		SELL 43 @ $540 (1 order)
+[PEX]		SELL 49 @ $374 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2613 ($1346887), two -1721 ($612676), three 1994 ($-2211346)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1098 ($-1254909), three -1708 ($722621)
+[PEX]	Trader 3: one 1783 ($-592473), two 879 ($575200), three 2918 ($-3039746)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -702 ($363496)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T0] Parsing command: <BUY 4 three 1208 1216>
+[PEX] Match: Order 5 [T2], New Order 4 [T0], value: $18326, fee: $183.
+[PEX] Match: Order 1 [T4], New Order 4 [T0], value: $23220, fee: $232.
+[PEX] Match: Order 4 [T3], New Order 4 [T0], value: $772502, fee: $7725.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 4
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 82 @ $577 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 220 @ $293 (1 order)
+[PEX]		BUY 1864 @ $283 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 0
+[PEX]		BUY 14 @ $1216 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2613 ($1346887), two -1721 ($612676), three 3188 ($-3033534)
+[PEX]	Trader 1: one 0 ($0), two 0 ($0), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1098 ($-1254909), three -1757 ($740947)
+[PEX]	Trader 3: one 1783 ($-592473), two 879 ($575200), three 1816 ($-2267244)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -745 ($386716)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T1] Parsing command: <BUY 4 two 842 423>
+[PEX] Match: Order 6 [T2], New Order 4 [T1], value: $64460, fee: $645.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 4
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 82 @ $577 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 4
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1864 @ $283 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 0
+[PEX]		BUY 14 @ $1216 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2613 ($1346887), two -1721 ($612676), three 3188 ($-3033534)
+[PEX]	Trader 1: one 0 ($0), two 220 ($-65105), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 878 ($-1190449), three -1757 ($740947)
+[PEX]	Trader 3: one 1783 ($-592473), two 879 ($575200), three 1816 ($-2267244)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -745 ($386716)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T1] Parsing command: <BUY 5 one 843 110>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 2; Sell levels: 4
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 82 @ $577 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 4
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1864 @ $283 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 0
+[PEX]		BUY 14 @ $1216 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2613 ($1346887), two -1721 ($612676), three 3188 ($-3033534)
+[PEX]	Trader 1: one 0 ($0), two 220 ($-65105), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 878 ($-1190449), three -1757 ($740947)
+[PEX]	Trader 3: one 1783 ($-592473), two 879 ($575200), three 1816 ($-2267244)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -745 ($386716)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T3] Parsing command: <SELL 9 three 401 793>
+[PEX] Match: Order 4 [T0], New Order 9 [T3], value: $17024, fee: $170.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 2; Sell levels: 4
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 82 @ $577 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 4
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1864 @ $283 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 1
+[PEX]		SELL 387 @ $793 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2613 ($1346887), two -1721 ($612676), three 3202 ($-3050558)
+[PEX]	Trader 1: one 0 ($0), two 220 ($-65105), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 878 ($-1190449), three -1757 ($740947)
+[PEX]	Trader 3: one 1783 ($-592473), two 879 ($575200), three 1802 ($-2250390)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -745 ($386716)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T0] Parsing command: <SELL 5 one 976 394>
+[PEX] Match: Order 8 [T3], New Order 5 [T0], value: $47314, fee: $473.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 894 @ $394 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 4
+[PEX]		SELL 1336 @ $1976 (1 order)
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1864 @ $283 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 1
+[PEX]		SELL 387 @ $793 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2695 ($1393728), two -1721 ($612676), three 3202 ($-3050558)
+[PEX]	Trader 1: one 0 ($0), two 220 ($-65105), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 878 ($-1190449), three -1757 ($740947)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1802 ($-2250390)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -745 ($386716)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T0] Parsing command: <AMEND 3 961 865>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 894 @ $394 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 4
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1864 @ $283 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 1
+[PEX]		SELL 387 @ $793 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2695 ($1393728), two -1721 ($612676), three 3202 ($-3050558)
+[PEX]	Trader 1: one 0 ($0), two 220 ($-65105), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 878 ($-1190449), three -1757 ($740947)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1802 ($-2250390)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -745 ($386716)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T1] Parsing command: <SELL 6 two 1515 855>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 894 @ $394 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 5
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1864 @ $283 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 1
+[PEX]		SELL 387 @ $793 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2695 ($1393728), two -1721 ($612676), three 3202 ($-3050558)
+[PEX]	Trader 1: one 0 ($0), two 220 ($-65105), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 878 ($-1190449), three -1757 ($740947)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1802 ($-2250390)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -745 ($386716)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T1] Parsing command: <BUY 7 one 133 1882>
+[PEX] Match: Order 5 [T0], New Order 7 [T1], value: $52402, fee: $524.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 761 @ $394 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 5
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 789 @ $1365 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1864 @ $283 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 1
+[PEX]		SELL 387 @ $793 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3202 ($-3050558)
+[PEX]	Trader 1: one 133 ($-52926), two 220 ($-65105), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 878 ($-1190449), three -1757 ($740947)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1802 ($-2250390)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -745 ($386716)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T3] Parsing command: <CANCEL 2>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 761 @ $394 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 4
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1864 @ $283 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 1
+[PEX]		SELL 387 @ $793 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3202 ($-3050558)
+[PEX]	Trader 1: one 133 ($-52926), two 220 ($-65105), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 878 ($-1190449), three -1757 ($740947)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1802 ($-2250390)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -745 ($386716)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T1] Parsing command: <SELL 8 two 1417 499>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 761 @ $394 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 5
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 1417 @ $499 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1864 @ $283 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 1
+[PEX]		SELL 387 @ $793 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3202 ($-3050558)
+[PEX]	Trader 1: one 133 ($-52926), two 220 ($-65105), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 878 ($-1190449), three -1757 ($740947)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1802 ($-2250390)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -745 ($386716)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T1] Parsing command: <SELL 9 two 1063 912>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 761 @ $394 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 6
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 1417 @ $499 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1864 @ $283 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 1
+[PEX]		SELL 387 @ $793 (1 order)
+[PEX]		BUY 470 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3202 ($-3050558)
+[PEX]	Trader 1: one 133 ($-52926), two 220 ($-65105), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 878 ($-1190449), three -1757 ($740947)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1802 ($-2250390)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -745 ($386716)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <SELL 8 three 208 87>
+[PEX] Match: Order 4 [T4], New Order 8 [T2], value: $62400, fee: $624.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 761 @ $394 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 6
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 1417 @ $499 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1864 @ $283 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 1
+[PEX]		SELL 387 @ $793 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3202 ($-3050558)
+[PEX]	Trader 1: one 133 ($-52926), two 220 ($-65105), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 878 ($-1190449), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1802 ($-2250390)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T0] Parsing command: <BUY 6 three 1356 1318>
+[PEX] Match: Order 9 [T3], New Order 6 [T0], value: $306891, fee: $3069.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 761 @ $394 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 6
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 1417 @ $499 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1864 @ $283 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 0
+[PEX]		BUY 969 @ $1318 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3360518)
+[PEX]	Trader 1: one 133 ($-52926), two 220 ($-65105), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 878 ($-1190449), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1415 ($-1943499)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <CANCEL 2>
+[PEX] [T3] Parsing command: <AMEND 9 1837 1167>
+[PEX] [T1] Parsing command: <SELL 10 three 683 1539>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 761 @ $394 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 6
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 1417 @ $499 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1864 @ $283 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 1
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		BUY 969 @ $1318 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3360518)
+[PEX]	Trader 1: one 133 ($-52926), two 220 ($-65105), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 878 ($-1190449), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1415 ($-1943499)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <CANCEL 7>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 761 @ $394 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 6
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 1417 @ $499 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 1
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		BUY 969 @ $1318 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3360518)
+[PEX]	Trader 1: one 133 ($-52926), two 220 ($-65105), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 878 ($-1190449), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1415 ($-1943499)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T1] Parsing command: <BUY 11 two 183 1469>
+[PEX] Match: Order 8 [T1], New Order 11 [T1], value: $91317, fee: $913.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 761 @ $394 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 6
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 1234 @ $499 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 1
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		BUY 969 @ $1318 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3360518)
+[PEX]	Trader 1: one 133 ($-52926), two 220 ($-66018), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 878 ($-1190449), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1415 ($-1943499)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <BUY 9 two 756 657>
+[PEX] Match: Order 8 [T1], New Order 9 [T2], value: $377244, fee: $3772.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 761 @ $394 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 6
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 478 @ $499 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 1
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		BUY 969 @ $1318 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3360518)
+[PEX]	Trader 1: one 133 ($-52926), two -536 ($311226), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1415 ($-1943499)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T3] Parsing command: <SELL 10 two 599 669>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 761 @ $394 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 7
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 599 @ $669 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 478 @ $499 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 1
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		BUY 969 @ $1318 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3360518)
+[PEX]	Trader 1: one 133 ($-52926), two -536 ($311226), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1415 ($-1943499)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T4] Parsing command: <BUY 5 three 912 124>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 761 @ $394 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 7
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 599 @ $669 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 478 @ $499 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]	Product: three; Buy levels: 3; Sell levels: 1
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		BUY 969 @ $1318 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3360518)
+[PEX]	Trader 1: one 133 ($-52926), two -536 ($311226), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1415 ($-1943499)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <AMEND 4 524 1081>
+[PEX] [T0] Parsing command: <SELL 7 three 1668 381>
+[PEX] Match: Order 6 [T0], New Order 7 [T0], value: $1277142, fee: $12771.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 761 @ $394 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 7
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 599 @ $669 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 478 @ $499 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 2
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 699 @ $381 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3373289)
+[PEX]	Trader 1: one 133 ($-52926), two -536 ($311226), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1415 ($-1943499)
+[PEX]	Trader 4: one 0 ($0), two -256 ($48896), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T4] Parsing command: <BUY 6 two 294 1739>
+[PEX] Match: Order 8 [T1], New Order 6 [T4], value: $146706, fee: $1467.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 761 @ $394 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 7
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 599 @ $669 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 184 @ $499 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 2
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 699 @ $381 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3373289)
+[PEX]	Trader 1: one 133 ($-52926), two -830 ($457932), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1415 ($-1943499)
+[PEX]	Trader 4: one 0 ($0), two 38 ($-99277), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T0] Parsing command: <AMEND 5 1659 1275>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 7
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 599 @ $669 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 184 @ $499 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 2
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 699 @ $381 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3373289)
+[PEX]	Trader 1: one 133 ($-52926), two -830 ($457932), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1415 ($-1943499)
+[PEX]	Trader 4: one 0 ($0), two 38 ($-99277), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T0] Parsing command: <BUY 8 three 428 1157>
+[PEX] Match: Order 7 [T0], New Order 8 [T0], value: $163068, fee: $1631.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 7
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 599 @ $669 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 184 @ $499 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 2
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 271 @ $381 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3374920)
+[PEX]	Trader 1: one 133 ($-52926), two -830 ($457932), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1415 ($-1943499)
+[PEX]	Trader 4: one 0 ($0), two 38 ($-99277), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <SELL 10 three 1889 1625>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 7
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 599 @ $669 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 184 @ $499 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 3
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 271 @ $381 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3374920)
+[PEX]	Trader 1: one 133 ($-52926), two -830 ($457932), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1415 ($-1943499)
+[PEX]	Trader 4: one 0 ($0), two 38 ($-99277), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <BUY 11 two 1729 247>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 7
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 599 @ $669 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 184 @ $499 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 3
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 271 @ $381 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3374920)
+[PEX]	Trader 1: one 133 ($-52926), two -830 ($457932), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1415 ($-1943499)
+[PEX]	Trader 4: one 0 ($0), two 38 ($-99277), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <SELL 12 one 1559 501>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 1; Sell levels: 6
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 1559 @ $501 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 7
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 599 @ $669 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 184 @ $499 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 3
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 271 @ $381 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3374920)
+[PEX]	Trader 1: one 133 ($-52926), two -830 ($457932), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1415 ($-1943499)
+[PEX]	Trader 4: one 0 ($0), two 38 ($-99277), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T1] Parsing command: <BUY 12 one 1141 30>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 2; Sell levels: 6
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 1559 @ $501 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 7
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 599 @ $669 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 184 @ $499 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 3
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 271 @ $381 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3374920)
+[PEX]	Trader 1: one 133 ($-52926), two -830 ($457932), three -2502 ($4103229)
+[PEX]	Trader 2: one 830 ($-767883), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1415 ($-1943499)
+[PEX]	Trader 4: one 0 ($0), two 38 ($-99277), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T4] Parsing command: <BUY 7 one 1767 570>
+[PEX] Match: Order 12 [T2], New Order 7 [T4], value: $781059, fee: $7811.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 3; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 7
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 599 @ $669 (1 order)
+[PEX]		SELL 1954 @ $545 (1 order)
+[PEX]		SELL 184 @ $499 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 3
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 271 @ $381 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3374920)
+[PEX]	Trader 1: one 133 ($-52926), two -830 ($457932), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 879 ($575200), three 1415 ($-1943499)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T1] Parsing command: <BUY 13 two 415 830>
+[PEX] Match: Order 8 [T1], New Order 13 [T1], value: $91816, fee: $918.
+[PEX] Match: Order 7 [T3], New Order 13 [T1], value: $125895, fee: $1259.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 3; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 6
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 599 @ $669 (1 order)
+[PEX]		SELL 1723 @ $545 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 3
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 271 @ $381 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3374920)
+[PEX]	Trader 1: one 133 ($-52926), two -599 ($329860), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 648 ($701095), three 1415 ($-1943499)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <AMEND 9 1514 1629>
+[PEX] [T4] Parsing command: <SELL 8 two 1484 602>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 3; Sell levels: 5
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 7
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 599 @ $669 (1 order)
+[PEX]		SELL 1484 @ $602 (1 order)
+[PEX]		SELL 1723 @ $545 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 3
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 271 @ $381 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3374920)
+[PEX]	Trader 1: one 133 ($-52926), two -599 ($329860), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 648 ($701095), three 1415 ($-1943499)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T4] Parsing command: <SELL 9 one 1224 1347>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 3; Sell levels: 6
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1224 @ $1347 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 7
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 599 @ $669 (1 order)
+[PEX]		SELL 1484 @ $602 (1 order)
+[PEX]		SELL 1723 @ $545 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 3
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 271 @ $381 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3374920)
+[PEX]	Trader 1: one 133 ($-52926), two -599 ($329860), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 648 ($701095), three 1415 ($-1943499)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T0] Parsing command: <BUY 9 one 1265 476>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 4; Sell levels: 6
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1224 @ $1347 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 1265 @ $476 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 2; Sell levels: 7
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 599 @ $669 (1 order)
+[PEX]		SELL 1484 @ $602 (1 order)
+[PEX]		SELL 1723 @ $545 (1 order)
+[PEX]		BUY 622 @ $423 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 3
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 271 @ $381 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3374920)
+[PEX]	Trader 1: one 133 ($-52926), two -599 ($329860), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 648 ($701095), three 1415 ($-1943499)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T3] Parsing command: <AMEND 10 711 271>
+[PEX] Match: Order 4 [T1], New Order 10 [T3], value: $263106, fee: $2631.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 4; Sell levels: 6
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1224 @ $1347 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 1265 @ $476 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 7
+[PEX]		SELL 1420 @ $1508 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1484 @ $602 (1 order)
+[PEX]		SELL 1723 @ $545 (1 order)
+[PEX]		SELL 89 @ $271 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 3
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 271 @ $381 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3374920)
+[PEX]	Trader 1: one 133 ($-52926), two 23 ($66754), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 26 ($961570), three 1415 ($-1943499)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <AMEND 6 138 1757>
+[PEX] [T1] Parsing command: <AMEND 3 558 1675>
+[PEX] [T2] Parsing command: <CANCEL 1>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 4; Sell levels: 6
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1224 @ $1347 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 1265 @ $476 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 6
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1484 @ $602 (1 order)
+[PEX]		SELL 1723 @ $545 (1 order)
+[PEX]		SELL 89 @ $271 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 3
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 271 @ $381 (1 order)
+[PEX]		BUY 262 @ $300 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3589 ($-3374920)
+[PEX]	Trader 1: one 133 ($-52926), two 23 ($66754), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 26 ($961570), three 1415 ($-1943499)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three -537 ($324316)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T4] Parsing command: <AMEND 1 173 380>
+[PEX] [T4] Parsing command: <AMEND 4 799 936>
+[PEX] Match: Order 7 [T0], New Order 4 [T4], value: $103251, fee: $1033.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 4; Sell levels: 6
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1224 @ $1347 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 1265 @ $476 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 6
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1484 @ $602 (1 order)
+[PEX]		SELL 1723 @ $545 (1 order)
+[PEX]		SELL 89 @ $271 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 2
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		BUY 528 @ $936 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3318 ($-3271669)
+[PEX]	Trader 1: one 133 ($-52926), two 23 ($66754), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 26 ($961570), three 1415 ($-1943499)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three -266 ($220032)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T0] Parsing command: <SELL 10 two 836 265>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 4; Sell levels: 6
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1224 @ $1347 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 1265 @ $476 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 7
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1484 @ $602 (1 order)
+[PEX]		SELL 1723 @ $545 (1 order)
+[PEX]		SELL 89 @ $271 (1 order)
+[PEX]		SELL 836 @ $265 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 2
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		BUY 528 @ $936 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3318 ($-3271669)
+[PEX]	Trader 1: one 133 ($-52926), two 23 ($66754), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 26 ($961570), three 1415 ($-1943499)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three -266 ($220032)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T3] Parsing command: <SELL 11 one 884 888>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 4; Sell levels: 7
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1224 @ $1347 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 884 @ $888 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 1265 @ $476 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 7
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1484 @ $602 (1 order)
+[PEX]		SELL 1723 @ $545 (1 order)
+[PEX]		SELL 89 @ $271 (1 order)
+[PEX]		SELL 836 @ $265 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 2
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		BUY 528 @ $936 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3318 ($-3271669)
+[PEX]	Trader 1: one 133 ($-52926), two 23 ($66754), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 26 ($961570), three 1415 ($-1943499)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three -266 ($220032)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T0] Parsing command: <SELL 11 three 63 1307>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 4; Sell levels: 7
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1224 @ $1347 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 884 @ $888 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 1265 @ $476 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 7
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1484 @ $602 (1 order)
+[PEX]		SELL 1723 @ $545 (1 order)
+[PEX]		SELL 89 @ $271 (1 order)
+[PEX]		SELL 836 @ $265 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 3
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 63 @ $1307 (1 order)
+[PEX]		BUY 528 @ $936 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($612676), three 3318 ($-3271669)
+[PEX]	Trader 1: one 133 ($-52926), two 23 ($66754), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 26 ($961570), three 1415 ($-1943499)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three -266 ($220032)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T0] Parsing command: <BUY 12 two 573 1660>
+[PEX] Match: Order 10 [T0], New Order 12 [T0], value: $151845, fee: $1518.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 4; Sell levels: 7
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1224 @ $1347 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 884 @ $888 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 1265 @ $476 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 7
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1484 @ $602 (1 order)
+[PEX]		SELL 1723 @ $545 (1 order)
+[PEX]		SELL 89 @ $271 (1 order)
+[PEX]		SELL 263 @ $265 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 3
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 63 @ $1307 (1 order)
+[PEX]		BUY 528 @ $936 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($611158), three 3318 ($-3271669)
+[PEX]	Trader 1: one 133 ($-52926), two 23 ($66754), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -1965 ($802723)
+[PEX]	Trader 3: one 1865 ($-639787), two 26 ($961570), three 1415 ($-1943499)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three -266 ($220032)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <SELL 13 three 1301 576>
+[PEX] Match: Order 4 [T4], New Order 13 [T2], value: $494208, fee: $4942.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 4; Sell levels: 7
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1224 @ $1347 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 884 @ $888 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 1265 @ $476 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 7
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1484 @ $602 (1 order)
+[PEX]		SELL 1723 @ $545 (1 order)
+[PEX]		SELL 89 @ $271 (1 order)
+[PEX]		SELL 263 @ $265 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 4
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 63 @ $1307 (1 order)
+[PEX]		SELL 773 @ $576 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($611158), three 3318 ($-3271669)
+[PEX]	Trader 1: one 133 ($-52926), two 23 ($66754), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -2493 ($1291989)
+[PEX]	Trader 3: one 1865 ($-639787), two 26 ($961570), three 1415 ($-1943499)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three 262 ($-274176)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T4] Parsing command: <AMEND 6 352 1824>
+[PEX] [T4] Parsing command: <SELL 10 one 1955 1553>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 4; Sell levels: 8
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1955 @ $1553 (1 order)
+[PEX]		SELL 1224 @ $1347 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 884 @ $888 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 1265 @ $476 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 7
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1484 @ $602 (1 order)
+[PEX]		SELL 1723 @ $545 (1 order)
+[PEX]		SELL 89 @ $271 (1 order)
+[PEX]		SELL 263 @ $265 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 4
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 63 @ $1307 (1 order)
+[PEX]		SELL 773 @ $576 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($611158), three 3318 ($-3271669)
+[PEX]	Trader 1: one 133 ($-52926), two 23 ($66754), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -2493 ($1291989)
+[PEX]	Trader 3: one 1865 ($-639787), two 26 ($961570), three 1415 ($-1943499)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three 262 ($-274176)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T0] Parsing command: <SELL 13 one 1941 572>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 4; Sell levels: 9
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1955 @ $1553 (1 order)
+[PEX]		SELL 1224 @ $1347 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 884 @ $888 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 1941 @ $572 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 1265 @ $476 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 7
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1484 @ $602 (1 order)
+[PEX]		SELL 1723 @ $545 (1 order)
+[PEX]		SELL 89 @ $271 (1 order)
+[PEX]		SELL 263 @ $265 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 4
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 63 @ $1307 (1 order)
+[PEX]		SELL 773 @ $576 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($611158), three 3318 ($-3271669)
+[PEX]	Trader 1: one 133 ($-52926), two 23 ($66754), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -2493 ($1291989)
+[PEX]	Trader 3: one 1865 ($-639787), two 26 ($961570), three 1415 ($-1943499)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three 262 ($-274176)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <SELL 14 three 806 1953>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 4; Sell levels: 9
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1955 @ $1553 (1 order)
+[PEX]		SELL 1224 @ $1347 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 884 @ $888 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 1941 @ $572 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 1265 @ $476 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 7
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1484 @ $602 (1 order)
+[PEX]		SELL 1723 @ $545 (1 order)
+[PEX]		SELL 89 @ $271 (1 order)
+[PEX]		SELL 263 @ $265 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 806 @ $1953 (1 order)
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 63 @ $1307 (1 order)
+[PEX]		SELL 773 @ $576 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($611158), three 3318 ($-3271669)
+[PEX]	Trader 1: one 133 ($-52926), two 23 ($66754), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -2493 ($1291989)
+[PEX]	Trader 3: one 1865 ($-639787), two 26 ($961570), three 1415 ($-1943499)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three 262 ($-274176)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T4] Parsing command: <SELL 11 two 924 1012>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 4; Sell levels: 9
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1955 @ $1553 (1 order)
+[PEX]		SELL 1224 @ $1347 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 884 @ $888 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 1941 @ $572 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 1265 @ $476 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 8
+[PEX]		SELL 924 @ $1012 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1484 @ $602 (1 order)
+[PEX]		SELL 1723 @ $545 (1 order)
+[PEX]		SELL 89 @ $271 (1 order)
+[PEX]		SELL 263 @ $265 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 806 @ $1953 (1 order)
+[PEX]		SELL 1889 @ $1625 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 63 @ $1307 (1 order)
+[PEX]		SELL 773 @ $576 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($611158), three 3318 ($-3271669)
+[PEX]	Trader 1: one 133 ($-52926), two 23 ($66754), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -2493 ($1291989)
+[PEX]	Trader 3: one 1865 ($-639787), two 26 ($961570), three 1415 ($-1943499)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three 262 ($-274176)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <AMEND 10 717 1031>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 4; Sell levels: 9
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1955 @ $1553 (1 order)
+[PEX]		SELL 1224 @ $1347 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 884 @ $888 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 1941 @ $572 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 1265 @ $476 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 8
+[PEX]		SELL 924 @ $1012 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1484 @ $602 (1 order)
+[PEX]		SELL 1723 @ $545 (1 order)
+[PEX]		SELL 89 @ $271 (1 order)
+[PEX]		SELL 263 @ $265 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 806 @ $1953 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 63 @ $1307 (1 order)
+[PEX]		SELL 717 @ $1031 (1 order)
+[PEX]		SELL 773 @ $576 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($611158), three 3318 ($-3271669)
+[PEX]	Trader 1: one 133 ($-52926), two 23 ($66754), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -2493 ($1291989)
+[PEX]	Trader 3: one 1865 ($-639787), two 26 ($961570), three 1415 ($-1943499)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three 262 ($-274176)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T3] Parsing command: <AMEND 4 1689 1419>
+[PEX] [T3] Parsing command: <BUY 12 three 1852 978>
+[PEX] Match: Order 13 [T2], New Order 12 [T3], value: $445248, fee: $4452.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 4; Sell levels: 9
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1955 @ $1553 (1 order)
+[PEX]		SELL 1224 @ $1347 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 884 @ $888 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 1941 @ $572 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 1265 @ $476 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 8
+[PEX]		SELL 924 @ $1012 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1484 @ $602 (1 order)
+[PEX]		SELL 1723 @ $545 (1 order)
+[PEX]		SELL 89 @ $271 (1 order)
+[PEX]		SELL 263 @ $265 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 4
+[PEX]		SELL 806 @ $1953 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 63 @ $1307 (1 order)
+[PEX]		SELL 717 @ $1031 (1 order)
+[PEX]		BUY 1079 @ $978 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1721 ($611158), three 3318 ($-3271669)
+[PEX]	Trader 1: one 133 ($-52926), two 23 ($66754), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -3266 ($1737237)
+[PEX]	Trader 3: one 1865 ($-639787), two 26 ($961570), three 2188 ($-2393199)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three 262 ($-274176)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T1] Parsing command: <BUY 14 two 1030 1587>
+[PEX] Match: Order 10 [T0], New Order 14 [T1], value: $69695, fee: $697.
+[PEX] Match: Order 10 [T3], New Order 14 [T1], value: $24119, fee: $241.
+[PEX] Match: Order 7 [T3], New Order 14 [T1], value: $369510, fee: $3695.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 4; Sell levels: 9
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1955 @ $1553 (1 order)
+[PEX]		SELL 1224 @ $1347 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 884 @ $888 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 1941 @ $572 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 1265 @ $476 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 6
+[PEX]		SELL 924 @ $1012 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 961 @ $865 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1484 @ $602 (1 order)
+[PEX]		SELL 1045 @ $545 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 4
+[PEX]		SELL 806 @ $1953 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 63 @ $1307 (1 order)
+[PEX]		SELL 717 @ $1031 (1 order)
+[PEX]		BUY 1079 @ $978 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1984 ($680853), three 3318 ($-3271669)
+[PEX]	Trader 1: one 133 ($-52926), two 1053 ($-401203), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -3266 ($1737237)
+[PEX]	Trader 3: one 1865 ($-639787), two -741 ($1355199), three 2188 ($-2393199)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three 262 ($-274176)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T0] Parsing command: <CANCEL 3>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 4; Sell levels: 9
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1955 @ $1553 (1 order)
+[PEX]		SELL 1224 @ $1347 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 884 @ $888 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 1941 @ $572 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 1265 @ $476 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 924 @ $1012 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1484 @ $602 (1 order)
+[PEX]		SELL 1045 @ $545 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 4
+[PEX]		SELL 806 @ $1953 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 63 @ $1307 (1 order)
+[PEX]		SELL 717 @ $1031 (1 order)
+[PEX]		BUY 1079 @ $978 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1984 ($680853), three 3318 ($-3271669)
+[PEX]	Trader 1: one 133 ($-52926), two 1053 ($-401203), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -3266 ($1737237)
+[PEX]	Trader 3: one 1865 ($-639787), two -741 ($1355199), three 2188 ($-2393199)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three 262 ($-274176)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] [T2] Parsing command: <SELL 15 one 1977 1473>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: one; Buy levels: 4; Sell levels: 10
+[PEX]		SELL 1575 @ $1854 (1 order)
+[PEX]		SELL 1955 @ $1553 (1 order)
+[PEX]		SELL 1977 @ $1473 (1 order)
+[PEX]		SELL 1224 @ $1347 (1 order)
+[PEX]		SELL 1659 @ $1275 (1 order)
+[PEX]		SELL 1569 @ $924 (1 order)
+[PEX]		SELL 884 @ $888 (1 order)
+[PEX]		SELL 746 @ $778 (1 order)
+[PEX]		SELL 1014 @ $700 (1 order)
+[PEX]		SELL 1941 @ $572 (1 order)
+[PEX]		BUY 208 @ $570 (1 order)
+[PEX]		BUY 1265 @ $476 (1 order)
+[PEX]		BUY 843 @ $110 (1 order)
+[PEX]		BUY 1141 @ $30 (1 order)
+[PEX]	Product: two; Buy levels: 1; Sell levels: 5
+[PEX]		SELL 924 @ $1012 (1 order)
+[PEX]		SELL 1063 @ $912 (1 order)
+[PEX]		SELL 1515 @ $855 (1 order)
+[PEX]		SELL 1484 @ $602 (1 order)
+[PEX]		SELL 1045 @ $545 (1 order)
+[PEX]		BUY 1729 @ $247 (1 order)
+[PEX]	Product: three; Buy levels: 2; Sell levels: 4
+[PEX]		SELL 806 @ $1953 (1 order)
+[PEX]		SELL 683 @ $1539 (1 order)
+[PEX]		SELL 63 @ $1307 (1 order)
+[PEX]		SELL 717 @ $1031 (1 order)
+[PEX]		BUY 1079 @ $978 (1 order)
+[PEX]		BUY 912 @ $124 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: one -2828 ($1446130), two -1984 ($680853), three 3318 ($-3271669)
+[PEX]	Trader 1: one 133 ($-52926), two 1053 ($-401203), three -2502 ($4103229)
+[PEX]	Trader 2: one -729 ($13176), two 1634 ($-1571465), three -3266 ($1737237)
+[PEX]	Trader 3: one 1865 ($-639787), two -741 ($1355199), three 2188 ($-2393199)
+[PEX]	Trader 4: one 1559 ($-788870), two 38 ($-99277), three 262 ($-274176)
+[PEX]	Trader 5: one 0 ($0), two 0 ($0), three 0 ($0)
+[PEX] Trader 0 disconnected
+[PEX] Trader 1 disconnected
+[PEX] Trader 2 disconnected
+[PEX] Trader 3 disconnected
+[PEX] Trader 4 disconnected
+[PEX] Trading completed
+[PEX] Exchange fees collected: $156748
+test_receiver received:
+[t=xxx] MARKET OPEN;
+[t=xxx] MARKET BUY three 903 405;
+[t=xxx] MARKET SELL one 1753 916;
+[t=xxx] MARKET SELL two 1721 356;
+[t=xxx] MARKET SELL two 256 191;
+[t=xxx] MARKET BUY one 830 1236;
+[t=xxx] MARKET SELL two 1420 1508;
+[t=xxx] MARKET BUY three 1882 1611;
+[t=xxx] MARKET SELL two 282 1748;
+[t=xxx] MARKET BUY two 1723 372;
+[t=xxx] MARKET SELL two 1298 1241;
+[t=xxx] MARKET SELL two 1633 1365;
+[t=xxx] MARKET SELL three 1145 1999;
+[t=xxx] MARKET BUY two 558 825;
+[t=xxx] MARKET BUY three 1994 1109;
+[t=xxx] MARKET SELL one 1783 329;
+[t=xxx] MARKET SELL two 0 0;
+[t=xxx] MARKET SELL three 1470 471;
+[t=xxx] MARKET BUY two 844 1978;
+[t=xxx] MARKET BUY three 745 545;
+[t=xxx] MARKET SELL two 1336 1976;
+[t=xxx] MARKET SELL one 1575 1854;
+[t=xxx] MARKET SELL three 1935 391;
+[t=xxx] MARKET BUY three 726 772;
+[t=xxx] MARKET SELL one 1014 700;
+[t=xxx] MARKET BUY three 470 300;
+[t=xxx] MARKET SELL three 102 103;
+[t=xxx] MARKET SELL three 1471 540;
+[t=xxx] MARKET SELL three 1655 374;
+[t=xxx] MARKET BUY three 703 1095;
+[t=xxx] MARKET SELL three 1102 701;
+[t=xxx] MARKET SELL one 746 778;
+[t=xxx] MARKET SELL one 1569 924;
+[t=xxx] MARKET SELL two 1954 545;
+[t=xxx] MARKET BUY one 1865 577;
+[t=xxx] MARKET SELL two 220 293;
+[t=xxx] MARKET BUY two 1864 283;
+[t=xxx] MARKET BUY three 1208 1216;
+[t=xxx] MARKET BUY two 842 423;
+[t=xxx] MARKET BUY one 843 110;
+[t=xxx] MARKET SELL three 401 793;
+[t=xxx] MARKET SELL one 976 394;
+[t=xxx] MARKET SELL two 961 865;
+[t=xxx] MARKET SELL two 1515 855;
+[t=xxx] MARKET BUY one 133 1882;
+[t=xxx] MARKET SELL two 0 0;
+[t=xxx] MARKET SELL two 1417 499;
+[t=xxx] MARKET SELL two 1063 912;
+[t=xxx] MARKET SELL three 208 87;
+[t=xxx] MARKET BUY three 1356 1318;
+[t=xxx] MARKET SELL three 683 1539;
+[t=xxx] MARKET BUY two 0 0;
+[t=xxx] MARKET BUY two 183 1469;
+[t=xxx] MARKET BUY two 756 657;
+[t=xxx] MARKET SELL two 599 669;
+[t=xxx] MARKET BUY three 912 124;
+[t=xxx] MARKET SELL three 1668 381;
+[t=xxx] MARKET BUY two 294 1739;
+[t=xxx] MARKET SELL one 1659 1275;
+[t=xxx] MARKET BUY three 428 1157;
+[t=xxx] MARKET SELL three 1889 1625;
+[t=xxx] MARKET BUY two 1729 247;
+[t=xxx] MARKET SELL one 1559 501;
+[t=xxx] MARKET BUY one 1141 30;
+[t=xxx] MARKET BUY one 1767 570;
+[t=xxx] MARKET BUY two 415 830;
+[t=xxx] MARKET SELL two 1484 602;
+[t=xxx] MARKET SELL one 1224 1347;
+[t=xxx] MARKET BUY one 1265 476;
+[t=xxx] MARKET SELL two 711 271;
+[t=xxx] MARKET SELL two 0 0;
+[t=xxx] MARKET BUY three 799 936;
+[t=xxx] MARKET SELL two 836 265;
+[t=xxx] MARKET SELL one 884 888;
+[t=xxx] MARKET SELL three 63 1307;
+[t=xxx] MARKET BUY two 573 1660;
+[t=xxx] MARKET SELL three 1301 576;
+[t=xxx] MARKET SELL one 1955 1553;
+[t=xxx] MARKET SELL one 1941 572;
+[t=xxx] MARKET SELL three 806 1953;
+[t=xxx] MARKET SELL two 924 1012;
+[t=xxx] MARKET SELL three 717 1031;
+[t=xxx] MARKET BUY three 1852 978;
+[t=xxx] MARKET BUY two 1030 1587;
+[t=xxx] MARKET SELL two 0 0;
+[t=xxx] MARKET SELL one 1977 1473;

@@ -1,0 +1,104 @@
+
+BUY 0 susCheese 1866 1112;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BUY 1 blueMuffin 1546 11;
+
+
+
+
+
+
+
+SELL 2 platters 1524 1069;
+
+
+BUY 3 blueMuffin 1797 1140;
+
+BUY 4 bathWater 1800 867;
+
+SELL 5 metal 1108 594;
+
+
+
+
+BUY 6 susCheese 954 1508;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SELL 7 susCheese 192 589;
+
+
+BUY 8 agedVegetables 846 207;
+
+
+
+BUY 9 platters 1321 1892;
+
+
+BUY 10 metal 827 673;
+
+
+
+
+
+
+
+
+SELL 11 blueMuffin 1890 468;
+
+
+
+
+
+BUY 12 susCheese 677 1570;
+
+
+
+
+
+BUY 13 metal 1519 1272;
+
+
+
+
+BUY 14 agedVegetables 352 1189;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

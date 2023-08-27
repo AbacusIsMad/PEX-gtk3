@@ -1,0 +1,6 @@
+BUY 0 Basil 300 1;
+BUY 1 Basil 300 1;
+BUY 2 Basil 300 1;
+BUY 3 Basil 300 1;
+
+SELL 4 Basil 1199 1;

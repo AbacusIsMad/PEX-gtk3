@@ -1,0 +1,95 @@
+[PEX] Starting
+[PEX] Trading 3 products: Basil Coriander Chives
+[PEX] Created FIFO /tmp/pe_exchange_0
+[PEX] Created FIFO /tmp/pe_trader_0
+[PEX] Starting trader 0 (./test_writer)
+[PEX] Connected to /tmp/pe_exchange_0
+[PEX] Connected to /tmp/pe_trader_0
+[PEX] Created FIFO /tmp/pe_exchange_1
+[PEX] Created FIFO /tmp/pe_trader_1
+[PEX] Starting trader 1 (./test_writer)
+[PEX] Connected to /tmp/pe_exchange_1
+[PEX] Connected to /tmp/pe_trader_1
+[PEX] Created FIFO /tmp/pe_exchange_2
+[PEX] Created FIFO /tmp/pe_trader_2
+[PEX] Starting trader 2 (./test_reader)
+[PEX] Connected to /tmp/pe_exchange_2
+[PEX] Connected to /tmp/pe_trader_2
+[PEX] [T0] Parsing command: <BUY 0 Basil 300 1>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: Basil; Buy levels: 1; Sell levels: 0
+[PEX]		BUY 300 @ $1 (1 order)
+[PEX]	Product: Coriander; Buy levels: 0; Sell levels: 0
+[PEX]	Product: Chives; Buy levels: 0; Sell levels: 0
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: Basil 0 ($0), Coriander 0 ($0), Chives 0 ($0)
+[PEX]	Trader 1: Basil 0 ($0), Coriander 0 ($0), Chives 0 ($0)
+[PEX]	Trader 2: Basil 0 ($0), Coriander 0 ($0), Chives 0 ($0)
+[PEX] [T0] Parsing command: <BUY 1 Basil 300 1>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: Basil; Buy levels: 1; Sell levels: 0
+[PEX]		BUY 600 @ $1 (2 orders)
+[PEX]	Product: Coriander; Buy levels: 0; Sell levels: 0
+[PEX]	Product: Chives; Buy levels: 0; Sell levels: 0
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: Basil 0 ($0), Coriander 0 ($0), Chives 0 ($0)
+[PEX]	Trader 1: Basil 0 ($0), Coriander 0 ($0), Chives 0 ($0)
+[PEX]	Trader 2: Basil 0 ($0), Coriander 0 ($0), Chives 0 ($0)
+[PEX] [T0] Parsing command: <BUY 2 Basil 300 1>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: Basil; Buy levels: 1; Sell levels: 0
+[PEX]		BUY 900 @ $1 (3 orders)
+[PEX]	Product: Coriander; Buy levels: 0; Sell levels: 0
+[PEX]	Product: Chives; Buy levels: 0; Sell levels: 0
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: Basil 0 ($0), Coriander 0 ($0), Chives 0 ($0)
+[PEX]	Trader 1: Basil 0 ($0), Coriander 0 ($0), Chives 0 ($0)
+[PEX]	Trader 2: Basil 0 ($0), Coriander 0 ($0), Chives 0 ($0)
+[PEX] [T0] Parsing command: <BUY 3 Basil 300 1>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: Basil; Buy levels: 1; Sell levels: 0
+[PEX]		BUY 1200 @ $1 (4 orders)
+[PEX]	Product: Coriander; Buy levels: 0; Sell levels: 0
+[PEX]	Product: Chives; Buy levels: 0; Sell levels: 0
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: Basil 0 ($0), Coriander 0 ($0), Chives 0 ($0)
+[PEX]	Trader 1: Basil 0 ($0), Coriander 0 ($0), Chives 0 ($0)
+[PEX]	Trader 2: Basil 0 ($0), Coriander 0 ($0), Chives 0 ($0)
+[PEX] [T1] Parsing command: <BUY 0 Chives 1 300>
+[PEX]	--ORDERBOOK--
+[PEX]	Product: Basil; Buy levels: 1; Sell levels: 0
+[PEX]		BUY 1200 @ $1 (4 orders)
+[PEX]	Product: Coriander; Buy levels: 0; Sell levels: 0
+[PEX]	Product: Chives; Buy levels: 1; Sell levels: 0
+[PEX]		BUY 1 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: Basil 0 ($0), Coriander 0 ($0), Chives 0 ($0)
+[PEX]	Trader 1: Basil 0 ($0), Coriander 0 ($0), Chives 0 ($0)
+[PEX]	Trader 2: Basil 0 ($0), Coriander 0 ($0), Chives 0 ($0)
+[PEX] [T0] Parsing command: <SELL 4 Basil 1199 1>
+[PEX] Match: Order 0 [T0], New Order 4 [T0], value: $300, fee: $3.
+[PEX] Match: Order 1 [T0], New Order 4 [T0], value: $300, fee: $3.
+[PEX] Match: Order 2 [T0], New Order 4 [T0], value: $300, fee: $3.
+[PEX] Match: Order 3 [T0], New Order 4 [T0], value: $299, fee: $3.
+[PEX]	--ORDERBOOK--
+[PEX]	Product: Basil; Buy levels: 1; Sell levels: 0
+[PEX]		BUY 1 @ $1 (1 order)
+[PEX]	Product: Coriander; Buy levels: 0; Sell levels: 0
+[PEX]	Product: Chives; Buy levels: 1; Sell levels: 0
+[PEX]		BUY 1 @ $300 (1 order)
+[PEX]	--POSITIONS--
+[PEX]	Trader 0: Basil 0 ($-12), Coriander 0 ($0), Chives 0 ($0)
+[PEX]	Trader 1: Basil 0 ($0), Coriander 0 ($0), Chives 0 ($0)
+[PEX]	Trader 2: Basil 0 ($0), Coriander 0 ($0), Chives 0 ($0)
+[PEX] Trader 0 disconnected
+[PEX] Trader 1 disconnected
+[PEX] Trading completed
+[PEX] Exchange fees collected: $12
+test_receiver received:
+[t=xxx] MARKET OPEN;
+[t=xxx] MARKET BUY Basil 300 1;
+[t=xxx] MARKET BUY Basil 300 1;
+[t=xxx] MARKET BUY Basil 300 1;
+[t=xxx] MARKET BUY Basil 300 1;
+[t=xxx] MARKET BUY Chives 1 300;
+[t=xxx] MARKET SELL Basil 1199 1;

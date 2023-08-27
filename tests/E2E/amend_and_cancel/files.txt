@@ -1,0 +1,5 @@
+tests/E2E/amend_and_cancel/t1.txt
+tests/E2E/amend_and_cancel/t2.txt
+tests/E2E/amend_and_cancel/t3.txt
+tests/E2E/amend_and_cancel/t4.txt
+tests/E2E/amend_and_cancel/t5.txt

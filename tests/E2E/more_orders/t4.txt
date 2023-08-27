@@ -1,0 +1,103 @@
+
+
+
+
+
+
+
+
+SELL 0 bathWater 1553 885;
+
+
+
+
+SELL 1 blueMuffin 631 177;
+
+
+
+
+
+
+SELL 2 susCheese 866 31;
+
+
+SELL 3 metal 1754 1115;
+
+
+
+
+
+
+
+
+
+
+
+
+
+BUY 4 bathWater 612 1962;
+
+
+
+
+
+BUY 5 susCheese 1934 424;
+
+
+
+
+
+
+
+
+
+
+
+BUY 6 platters 1922 1155;
+
+
+
+
+
+
+
+
+SELL 7 susCheese 1890 378;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BUY 8 metal 288 873;
+
+
+
+
+
+
+
+
+
+
+
+SELL 9 blueMuffin 1573 32;
+
+
+
+
+
+
+
+
+
+
+

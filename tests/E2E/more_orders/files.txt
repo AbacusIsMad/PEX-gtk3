@@ -1,0 +1,6 @@
+tests/E2E/more_orders/t1.txt
+tests/E2E/more_orders/t2.txt
+tests/E2E/more_orders/t3.txt
+tests/E2E/more_orders/t4.txt
+tests/E2E/more_orders/t5.txt
+tests/E2E/more_orders/t6.txt

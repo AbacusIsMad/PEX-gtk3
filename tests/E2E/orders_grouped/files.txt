@@ -1,0 +1,7 @@
+tests/E2E/orders_grouped/t1.txt
+tests/E2E/orders_grouped/t2.txt
+tests/E2E/orders_grouped/t3.txt
+tests/E2E/orders_grouped/t4.txt
+tests/E2E/orders_grouped/t5.txt
+tests/E2E/orders_grouped/t6.txt
+tests/E2E/orders_grouped/t7.txt

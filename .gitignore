@@ -1,0 +1,11 @@
+# You are encouraged to customize this file to your own need.
+
+
+build/**
+*~
+main
+pe_trader
+trader_a
+trader_b
+trader_c
+trader_d

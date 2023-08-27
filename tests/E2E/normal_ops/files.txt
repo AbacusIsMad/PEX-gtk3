@@ -1,0 +1,2 @@
+tests/E2E/normal_ops/what.txt
+tests/E2E/normal_ops/what2.txt
