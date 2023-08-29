@@ -40,7 +40,7 @@ static bool traverse_order_tree(const void *item, void *udata){
 	return true;
 }
 
-static void populate_sender(bool exchange_changed){
+void populate_sender(bool exchange_changed){
 	//figure out which ones have changed, and reget attributes for that if necessary.
 	struct sel {
 		int trader;
@@ -51,7 +51,7 @@ static void populate_sender(bool exchange_changed){
 		int price;
 	};
 	static struct sel prev = {0, {0}, -1, 0, 1, 1};
-	struct sel cur;
+	struct sel cur = {0, {0}, -1, 0, 1, 1};
 	GtkTreeIter i;
 	//trader
 	cur.trader = gtk_spin_button_get_value_as_int(gui_arg.sender.trader_sel);
@@ -107,7 +107,6 @@ static void populate_sender(bool exchange_changed){
 	prev.order = cur.order;
 	
 	//product
-	//TODO: make product persistent, and remove it if 
 	if (order_changed){ //fetch product name
 		static int order_state = 0;
 		if (cur.order == -1){ //put nothing in product
@@ -131,25 +130,74 @@ static void populate_sender(bool exchange_changed){
 				g_object_unref( G_OBJECT(l));
 				gtk_combo_box_set_active ( gui_arg.sender.product_sel, 0);
 				order_state = 1;
+				prev.product = cur.product;
 			} else { //display everything
 				gtk_combo_box_set_model( gui_arg.sender.product_sel,  
 											GTK_TREE_MODEL(gui_arg.sender.static_product));
+				cur.product = gtk_combo_box_get_active( gui_arg.sender.product_sel);
 				if (order_state != 2) gtk_combo_box_set_active ( gui_arg.sender.product_sel, 0);
 				order_state = 2;
+				prev.product = cur.product;
 			}
 		}
-	}
-	prev.product = cur.product; //no need for product_changed cos not really any use
-	//no need for qty and price change either
+	} else if (cur.order != -1) prev.product = gtk_combo_box_get_active( gui_arg.sender.product_sel);
+	//no need for qty and price change either, but need to store
+	prev.quantity = gtk_spin_button_get_value_as_int (gui_arg.sender.qty_sel);
+	prev.price = gtk_spin_button_get_value_as_int (gui_arg.sender.price_sel);
 	
 	//compose message and write it to gui_arg.sender.preview
-	bool message_valid = true;
-	if (cur.order == -1) message_valid = false;
-	if (message_valid){
-	
+	bool valid_msg = true;
+	if (cur.order == -1) valid_msg = false;
+	char buf[90];
+	if (valid_msg){
+		if (!strcmp(prev.action, "CANCEL")){
+			sprintf(gui_arg.sender.send_msg, "CANCEL %d;", prev.order);
+		} else if (!strcmp(prev.action, "AMEND")){
+			sprintf(gui_arg.sender.send_msg, "AMEND %d %d %d;",
+				prev.order, prev.quantity, prev.price);
+		}else{
+			sprintf(gui_arg.sender.send_msg, "%s %d %s %d %d;", prev.action, prev.order,
+				exchange_arg.ex->item_names[prev.product], prev.quantity, prev.price);
+		}
+		sprintf(buf, "<span>%d -> [PEX]: \"%s\"</span>", prev.trader, gui_arg.sender.send_msg);
 	} else {
-	
+		sprintf(buf, "<span foreground=\"red\">order does not exist</span>");
 	}
+	gui_arg.sender.valid_msg = valid_msg;
+	gtk_label_set_markup(gui_arg.sender.preview, buf);
+  	gtk_label_set_use_markup(gui_arg.sender.preview, TRUE);
+}
+
+void send_masquarade_cb(GtkWidget *widget, gpointer data){
+	int num = gtk_spin_button_get_value_as_int (gui_arg.sender.trader_sel);
+	struct trader *t = exchange_arg.ex->traders + num;
+	char *txt;
+	if (t->disconnected){
+		txt = "<span foreground=\"red\">cannot masquarade: trader disconnected</span>";
+	} else if (!gui_arg.sender.valid_msg) {
+		txt = "<span foreground=\"red\">cannot masquarade: message not valid</span>";
+	} else {
+		write(t->fake_read, gui_arg.sender.send_msg, strlen(gui_arg.sender.send_msg));
+		kill(t->pid, SIGUSR1);
+		txt = "<span>message sent.</span>";
+	}
+	gtk_label_set_markup(gui_arg.sender.status, txt);
+  	gtk_label_set_use_markup(gui_arg.sender.status, TRUE);
+}
+
+void terminate_trader_cb(GtkWidget *widget, gpointer data){
+	char buf[70];
+	//get selected trader number
+	int num = gtk_spin_button_get_value_as_int (gui_arg.sender.trader_sel);
+	struct trader *t = exchange_arg.ex->traders + num;
+	if (t->disconnected){
+		sprintf(buf, "<span foreground=\"red\">trader %d already disconnected</span>", num);
+	} else {
+		kill(t->pid, SIGTERM);
+		sprintf(buf, "<span>trader %d removed</span>", num);
+	}
+  	gtk_label_set_markup(gui_arg.sender.status, buf);
+  	gtk_label_set_use_markup(gui_arg.sender.status, TRUE);
 }
 
 void spinButton_value_changed_cb(GtkSpinButton *self, gpointer user_data){

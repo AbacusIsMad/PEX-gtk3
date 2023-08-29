@@ -190,7 +190,7 @@ int exc_init(struct exchange *exchange, char* product_file, int trader_num, char
             }
             
             //masquarade setup, file is guarenteed to be open on the read side so nonblocking is okay
-            //exchange->traders[i].fake_read = open(filename, O_WRONLY | O_CLOEXEC | O_NONBLOCK);
+            exchange->traders[i].fake_read = open(filename, O_WRONLY | O_CLOEXEC | O_NONBLOCK);
             
             //link to fifo, 1 is write side
             sprintf(filename2, FIFO_EXCHANGE, i);
@@ -263,6 +263,8 @@ void exc_teardown(struct exchange *exchange){
         unlink(filename);
         close(exchange->traders[i].comms[0]);
         close(exchange->traders[i].comms[1]);
+        //masquarade
+        close(exchange->traders[i].fake_read);
     }
     //3
     for(int i = 0; i < exchange->trader_num; i++){

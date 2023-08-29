@@ -38,6 +38,12 @@ gboolean receive_update(GIOChannel *source, GIOCondition cond, gpointer d){
 			//don't do continue, because things might still get updated
 		}
 		
+		if (buf.signal == -1) { //trader disconnect
+		
+		} else {
+			populate_sender(true);
+		}
+		
 		//TEMP: update the drawing surface
 		gtk_widget_queue_draw (gui_arg.graph.graph);
 		

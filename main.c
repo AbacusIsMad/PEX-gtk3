@@ -63,6 +63,8 @@ static void activate(GtkApplication* app, gpointer user_data){
 	gtk_window_present (GTK_WINDOW (window));
 	g_object_unref (builder);
 
+	//some gui initialisation
+	populate_sender(true);
 }
 
 int main(int argc, char **argv){

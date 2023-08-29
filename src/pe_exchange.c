@@ -96,7 +96,8 @@ int ex_main(int argc, char ** argv, struct exchange *ex, struct exchange_arg_hel
                         	int tid = ex->events[i].data.u32;
                         	if (ex->traders[tid].disconnected) continue;
 
-                        	sprintf(repeat_buf, "%d disconnected\n", tid);
+                        	sprintf(repeat_buf, "%d -> PEX: disconnect\n", tid);
+                        	trigger_status = -2;
                         	//writing is done below
                             #ifndef PEX_TEST
                             if (disconnect_trader(ex, tid) == 0){
@@ -181,10 +182,10 @@ int ex_main(int argc, char ** argv, struct exchange *ex, struct exchange_arg_hel
                 }
                 if (tid == -1) continue;
                 //disconnect, gotta send the message here again
-                char buf[20];
-                int trigger_status = -1;
+                char buf[30];
+                int trigger_status = -2;
                 if (ex->traders[tid].disconnected) continue;
-                sprintf(buf, "%d disconnected\n", tid);
+                sprintf(buf, "%d -> PEX: disconnect\n", tid);
                 (void)!write(ex_arg->msg_pipe, buf, strnlen(buf, MAX_BUF_GUI));
                 #ifndef PEX_TEST
                 if (disconnect_trader(ex, tid) == 0){

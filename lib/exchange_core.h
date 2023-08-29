@@ -43,7 +43,7 @@ struct trader{
     char disconnected;
     int current_order_id;
     //newly added - to masquarade as trader
-    //int fake_read; should be outside
+    int fake_read;
 };
 
 #define PRODUCT_LINE (20)
@@ -109,6 +109,8 @@ struct gui_helper {
 		GtkLabel *preview;
 		GtkLabel *status;
 		GtkListStore *static_product;
+		char send_msg[60];
+		bool valid_msg;
 	} sender;
 };
 struct gui_helper gui_arg;

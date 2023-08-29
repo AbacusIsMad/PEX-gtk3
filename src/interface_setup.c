@@ -19,21 +19,6 @@ static void set_combo_to_text(GtkWidget *combo){
 	gtk_cell_layout_set_attributes(GTK_CELL_LAYOUT(combo), column, "text", 0, NULL);
 }
 
-static void terminate_trader_cb(GtkWidget *widget, gpointer data){
-	char buf[70];
-	//get selected trader number
-	int num = gtk_spin_button_get_value_as_int (gui_arg.sender.trader_sel);
-	struct trader *t = exchange_arg.ex->traders + num;
-	if (t->disconnected){
-		sprintf(buf, "<span foreground=\"red\">trader %d already disconnected</span>", num);
-	} else {
-		kill(t->pid, SIGTERM);
-		sprintf(buf, "<span>trader %d removed</span>", num);
-	}
-  	gtk_label_set_markup(gui_arg.sender.status, buf);
-  	gtk_label_set_use_markup(gui_arg.sender.status, TRUE);
-}
-
 void setup_sender(GtkBuilder *builder){
 	//the status message board
 	GtkLabel *status = GTK_LABEL( gtk_builder_get_object (builder, "sender_status"));
@@ -86,6 +71,10 @@ void setup_sender(GtkBuilder *builder){
 	//the trader disconnect button
 	GtkButton *remove = GTK_BUTTON( gtk_builder_get_object (builder, "sender_remove"));
 	g_signal_connect (remove, "clicked", G_CALLBACK (terminate_trader_cb), NULL);
+	
+	//the trader send message button
+	GtkButton *send = GTK_BUTTON( gtk_builder_get_object (builder, "sender_send"));
+	g_signal_connect (send, "clicked", G_CALLBACK (send_masquarade_cb), NULL);
 }
 
 
