@@ -8,23 +8,13 @@ struct exchange *ex;
 extern struct exchange_arg_helper exchange_arg;
 extern struct gui_helper gui_arg;
 
-
-static void
-print_hello (GtkWidget *widget,
-             gpointer   data)
-{
-  g_print ("Hello World\n");
-}
-
-
-
-static void
-quit_cb (GtkWidget *widget, gpointer data)
-{
-  GtkWindow *window = data;
-
-  gtk_window_close (window);
-  exit(0);
+static void quit_cb (GtkWidget *widget, gpointer data) {
+	pthread_mutex_lock(exchange_arg.mutex);
+	//idk why but killing with getgid didn't work
+	for (int i = 0; i < exchange_arg.ex->trader_num; i++)
+		kill(exchange_arg.ex->traders[i].pid, SIGTERM);
+	pthread_mutex_unlock(exchange_arg.mutex);
+	exit(0);
 }
 
 
@@ -37,14 +27,8 @@ static void activate(GtkApplication* app, gpointer user_data){
 	gtk_window_set_default_size (GTK_WINDOW (window), 800, 600);
 	gtk_window_set_resizable(GTK_WINDOW(window),FALSE);
 	gtk_window_set_application (GTK_WINDOW (window), app);
-	
-	GObject *button = gtk_builder_get_object (builder, "button1");
-	g_signal_connect (button, "clicked", G_CALLBACK (print_hello), NULL);
 
-	button = gtk_builder_get_object (builder, "button2");
-	g_signal_connect (button, "clicked", G_CALLBACK (print_hello), NULL);
-
-	button = gtk_builder_get_object (builder, "quit");
+	GtkButton *button = GTK_BUTTON( gtk_builder_get_object (builder, "quit"));
 	g_signal_connect_swapped (button, "clicked", G_CALLBACK (quit_cb), window);
 	
 	setup_text_log(builder);
