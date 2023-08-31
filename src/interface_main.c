@@ -32,7 +32,7 @@ gboolean receive_update(GIOChannel *source, GIOCondition cond, gpointer d){
 		
 		//chuck it in the text log
 		
-		if (update_text_log(exchange_arg.msg_fp, gui_arg.text_log_scroll, gui_arg.text_log_content)){
+		if (update_text_log(exchange_arg.msg_fp, gui_arg.text_log.scroll, gui_arg.text_log.content)){
 			fprintf(stderr, "expected message from exchange from trigger %d, "
 								"got error (likely EOF)\n", buf.signal);
 			//don't do continue, because things might still get updated

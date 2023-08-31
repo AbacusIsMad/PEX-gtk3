@@ -16,3 +16,4 @@ E2E testing consists of:
 - A test-reader that accepts global messages
 - The modified exchange that initialise multiple instances of test-writers and send them the correct info (controlled via proprocessor)
 Unit testing tests the read function to see that it handles many inputs.
+# PEX-gtk3

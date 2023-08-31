@@ -90,8 +90,10 @@ struct exchange_arg_helper {
 struct exchange_arg_helper exchange_arg;
 
 struct gui_helper {
-	GtkScrolledWindow *text_log_scroll;
-	GtkTextBuffer *text_log_content;
+	struct {
+		GtkScrolledWindow *scroll;
+		GtkTextBuffer *content;
+	} text_log;
 	struct {
 		GtkWidget *graph;
 		cairo_surface_t *surface;

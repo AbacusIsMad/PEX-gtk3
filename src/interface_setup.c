@@ -6,11 +6,11 @@ extern struct gui_helper gui_arg;
 void setup_text_log(GtkBuilder *builder){
 	GtkScrolledWindow *text_log_scroll =
 		(GtkScrolledWindow*)gtk_builder_get_object (builder, "text_log_scroll");
-	gui_arg.text_log_scroll = text_log_scroll;
+	gui_arg.text_log.scroll = text_log_scroll;
 	
 	GtkTextBuffer *text_log_content = (GtkTextBuffer*)gtk_builder_get_object(builder, "text_log_content");
 	
-	gui_arg.text_log_content = text_log_content;
+	gui_arg.text_log.content = text_log_content;
 }
 
 static void set_combo_to_text(GtkWidget *combo){
