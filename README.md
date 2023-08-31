@@ -1,4 +1,7 @@
 # PEX-gtk3
+<p align="center">
+  <img src="https://github.com/AbacusIsMad/PEX-gtk3/blob/main/demo.png" width="50%"/>
+</p>
 built using gtk3.0, UI with glade, and drawings with cairo.
 
 dependencies:
