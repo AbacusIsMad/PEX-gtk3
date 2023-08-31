@@ -17,5 +17,5 @@ dependencies:
 - a quit button
 
 ### What it will have when I finish:
-- a [bid ask spread chart](https://www.google.com/search?q=bid+ask+spread+chart) for every item
+- a [bid ask spread chart](https://www.google.com/search?q=bid+ask+spread+chart) for every item (it's currently the trig line)
 - something on the top left 
